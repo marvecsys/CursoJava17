@@ -8,10 +8,12 @@ package soccer;
 
 /**
  *
- * @author Desarrollo 01
+ * @author Edgar Anaya
  */
-public class Player {
+public class Goal {
     
-    public String playerName;
+    public Team theTeam;
+    public Player thePlayer;
+    public double theTime;
     
 }

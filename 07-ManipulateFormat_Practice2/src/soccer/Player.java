@@ -8,7 +8,7 @@ package soccer;
 
 /**
  *
- * @author Desarrollo 01
+ * @author Edgar Anaya
  */
 public class Player {
     

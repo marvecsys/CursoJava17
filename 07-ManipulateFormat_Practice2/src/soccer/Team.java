@@ -8,10 +8,11 @@ package soccer;
 
 /**
  *
- * @author Desarrollo 01
+ * @author Edgar Anaya
  */
-public class Player {
+public class Team {
     
-    public String playerName;
+    public String teamName;
+    public Player[] playerArray;
     
 }

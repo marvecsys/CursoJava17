@@ -8,10 +8,12 @@ package soccer;
 
 /**
  *
- * @author Desarrollo 01
+ * @author Edgar Anaya
  */
-public class Player {
+public class Game {
     
-    public String playerName;
+    public Team homeTeam;
+    public Team awayTeam;
+    public Goal[] goals; //Había un error en esta línea, fue necesario agregar el arreglo.
     
 }

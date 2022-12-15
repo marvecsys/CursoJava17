@@ -8,7 +8,7 @@ package soccer;
 
 /**
  *
- * @author Desarrollo 01
+ * @author Edgar Anaya
  */
 public class League {
     public static void main(String[] args) {
@@ -38,7 +38,7 @@ public class League {
         team2.playerArray[0] = new Player();
         team2.playerArray[0].playerName = "Kylian Mbappe";
         team2.playerArray[1] = new Player();
-        team2.playerArray[1].playerName = "Jules Kounde";
+        team2.playerArray[1].playerName = "Kingsley Coman";
         team2.playerArray[2] = new Player();
         team2.playerArray[2].playerName = "Alphonse Areola";
         
@@ -68,9 +68,26 @@ public class League {
         Goal[] theGoals = {goal1};
         currGame.goals = theGoals;
         
-        System.out.println("Goal scored after " + currGame.goals[0].theTime + " mins by " + currGame.goals[0].thePlayer.playerName + " of " + currGame.goals[0].theTeam.teamName);
+        System.out.println("Gol anotado a los " + currGame.goals[0].theTime + " mins por " + currGame.goals[0].thePlayer.playerName + " de " + currGame.goals[0].theTeam.teamName);
+        System.out.println("");
         
         /* Practice 7-1. Add code for finding a player within team2 here */
         
+        for (Player thePlayer: team1.playerArray){
+            if (thePlayer.playerName.matches(".*Mar.*")){
+                System.out.println("Encontrado: " + thePlayer.playerName);
+                System.out.println("Apellido: " + thePlayer.playerName.split(" ")[1]);
+                System.out.println("");
+            }
+        }
+
+        for (Player thePlayer: team1.playerArray){
+            String name[] = thePlayer.playerName.split(" ");
+            StringBuilder familyNameFirst = new StringBuilder();
+            familyNameFirst.append(name[1]);
+            familyNameFirst.append(", ");
+            familyNameFirst.append(name[0]);
+            System.out.println(familyNameFirst);
+        }
     }
 }
