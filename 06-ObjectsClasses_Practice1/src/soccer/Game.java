@@ -11,5 +11,5 @@ package soccer;
 public class Game {
     public Team homeTeam;
     public Team awayTeam;
-    public Goal goals;
+    public Goal[] goals; //Había un error en esta línea, fue necesario agregar el arreglo.
 }
