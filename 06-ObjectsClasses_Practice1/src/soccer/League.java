@@ -69,8 +69,5 @@ public class League {
         currGame.goals = theGoals;
         
         System.out.println("Goal scored after " + currGame.goals[0].theTime + " mins by " + currGame.goals[0].thePlayer.playerName + " of " + currGame.goals[0].theTeam.teamName);
-        
-        /* Practice 7-1. Add code for finding a player within team2 here */
-        
     }
 }
