@@ -17,9 +17,6 @@ public class Player {
     public Player(String playerName) {
         this.playerName = playerName;
     }
-    
-    //public Player() {     
-    //}
 
     /**
      * @return the playerName

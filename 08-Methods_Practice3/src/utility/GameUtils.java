@@ -22,7 +22,6 @@ public class GameUtils {
             currGame.goals = new Goal[(int) (Math.random() * 10)];   // If goals not initialized max will be 9
         }
 
-        //System.out.println(currGame.goals.length);
         int i = 0;
         for (Goal currGoal : currGame.goals) {
             currGoal = new Goal();
@@ -35,7 +34,6 @@ public class GameUtils {
         Arrays.sort(currGame.goals, (g1, g2) -> Double.valueOf(g1.theTime).compareTo(Double.valueOf(g2.theTime)));
     }
 
-    // Uses reflection so works with getter method or public field
     private static Team getHomeTeam(Game currGame, String homeOrAway) {
         Team theTeam = null;
         Method m;

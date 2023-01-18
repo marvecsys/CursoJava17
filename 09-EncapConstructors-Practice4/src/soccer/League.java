@@ -26,8 +26,6 @@ public class League {
             currGame.playGame();
             System.out.println(currGame.getDescription());
         }
-
-        //System.out.println(currGame.getDescription());
     }
         
     public Team[] createTeams(){
